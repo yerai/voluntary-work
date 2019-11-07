@@ -1,0 +1,97 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Hi-Fi Volunteering Prototype</string>
+
+
+    <!-- strings.xml -->
+    <string name="helps">
+
+Helps
+</string>
+    <!-- strings.xml -->
+    <string name="upcoming_sc">
+
+Upcoming score
+</string>
+    <!-- strings.xml -->
+    <string name="nothing_pla">
+
+Nothing planned yet.
+</string>
+    <!-- strings.xml -->
+    <string name="level_1">
+
+Level 1
+</string>
+    <!-- strings.xml -->
+    <string name="friends1">
+
+Aaron Bennet
+</string>
+    <!-- strings.xml -->
+    <string name="friends2">
+
+Alex Blackwell;34`-
+</string>
+    <!-- strings.xml -->
+
+    <string name="friends3">
+Alicia Malcolm
+</string>
+    <!-- strings.xml -->
+    <string name="friends4" tools:ignore="ExtraTranslation">
+Amelia Earhart
+</string>
+    <!-- strings.xml -->
+    <string name="friends_friends">
+
+A
+</string>
+
+    <!-- strings.xml -->
+    <string name="donations">
+
+Donations
+</string>
+    <!-- strings.xml -->
+    <string name="friends">
+
+Friends
+</string>
+    <!-- strings.xml -->
+    <string name="level_3">
+
+Level 3
+</string>
+
+    <!-- strings.xml -->
+    <string name="luca_alma">
+
+Luca Alma
+</string>
+
+    <!--Titles-->
+
+    <string name="title_search">
+Search
+</string>
+
+    <string name="title_helps">
+Helper level
+</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_friends">Friends</string>
+
+
+    <!--Testing recycleView-->
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+
+
+</resources>
+

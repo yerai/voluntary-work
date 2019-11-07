@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/friends"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/friends"
+                        android:textAppearance="@style/h3"
+                        app:fontFamily="@font/comfortaa" />
+
+                    <TextView
+                        android:id="@+id/friends_number"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:background="@drawable/friends_level"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textAppearance="@style/h1"
+                        android:textColor="#FFFFFF"
+                        app:fontFamily="@font/open_sans_bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/donations"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/donations"
+                        android:textAppearance="@style/h3"
+                        app:fontFamily="@font/comfortaa" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/donation_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/donation_level"
+                            android:layout_alignTop="@id/donation_level"
+                            android:layout_alignRight="@id/donation_level"
+                            android:layout_alignBottom="@id/donation_level"
+                            android:background="@drawable/ring_background"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textAppearance="@style/h1"
+                            android:textColor="#56A24E"
+                            app:fontFamily="@font/open_sans_bold" />
+
+                        <ProgressBar
+                            android:id="@+id/donation_level"
+                            style="?android:progressBarStyleHorizontal"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/donation_level"
+                            android:rotation="90" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/level_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/donation_level"
+                        android:layout_alignTop="@id/donation_level"
+                        android:layout_alignRight="@id/donation_level"
+                        android:layout_alignBottom="@id/donation_level"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/level_3"
+                        android:textAppearance="@style/h6"
+                        app:fontFamily="@font/comfortaa" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/helps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9dp"
+                        android:text="@string/helps"
+                        android:textAppearance="@style/h3"
+                        app:fontFamily="@font/comfortaa" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/helps_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/help_level"
+                            android:layout_alignTop="@id/help_level"
+                            android:layout_alignRight="@id/help_level"
+                            android:layout_alignBottom="@id/help_level"
+                            android:background="@drawable/ring_background"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textAppearance="@style/h1"
+                            android:textColor="#C38209"
+                            app:fontFamily="@font/open_sans_bold" />
+
+                        <ProgressBar
+                            android:id="@+id/help_level"
+                            style="?android:progressBarStyleHorizontal"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/help_level"
+                            android:rotation="90"
+                            android:text="@string/donations" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/level_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/level_1"
+                        android:textAppearance="@style/h6"
+                        app:fontFamily="@font/comfortaa" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/search_bar"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/search_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/searcher" />
+
+                <EditText
+                    android:id="@+id/search_thing"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:background="@drawable/search_bar"
+                    android:hint="Search friends"
+                    android:textColor="#474747" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friends"
+                    android:textAppearance="@style/h1" />
+
+                <TextView
+                    android:id="@+id/add_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:onClick="goAddFriends"
+                    android:text="+ ADD FRIENDS"
+                    android:textAppearance="@style/h6"
+                    android:textColor="@color/primary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Order by:"
+                    android:textAppearance="@style/h5" />
+
+                <TextView
+                    android:id="@+id/order_donations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="Donations"
+                    android:textAppearance="@style/h6" />
+
+                <TextView
+                    android:id="@+id/order_helps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Helps"
+                    android:textAppearance="@style/h6" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lista_amigos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
